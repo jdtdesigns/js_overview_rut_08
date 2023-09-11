@@ -1,21 +1,7 @@
 
-// Function that takes a name(string) as an argument and prints that name to the console
-
-
-function printName(type, firstName, lastName) {
-  if (type === 'first') {
-    return firstName;
+for (var count = 0; count < 11; count++) {
+  if (count === 5) {
+    console.log(count);
+    break;
   }
-
-  if (type.toLowerCase() === 'last') {
-    return lastName;
-  }
-
-  return 'no type supplied';
 }
-
-
-var result = printName('LaSt', 'JD', 'Tadlock');
-
-console.log(result);
-
