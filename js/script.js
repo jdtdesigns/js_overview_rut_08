@@ -1,7 +1,15 @@
 
-for (var count = 0; count < 11; count++) {
-  if (count === 5) {
-    console.log(count);
-    break;
-  }
+
+function printName(userName) {
+  var capitalize = function (str) {
+    return str[0].toUpperCase() + str.slice(1);
+  };
+
+  var output = capitalize(userName);
+
+  return output;
 }
+
+var result = printName('rodolfo');
+
+console.log(result);
