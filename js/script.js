@@ -1,37 +1,21 @@
 
-// Reference Value Types - two of these
-var fruits = ['orange', 'grape', 'kiwi', 'watermelon'];
-
-// console.log(fruits);
-// // alert(fruits[1])
-
-// fruits.push('pear');
-
-// console.log(fruits);
-
-// fruits.unshift('banana');
-
-console.log(fruits);
-
-fruits.pop();
-
-console.log(fruits);
-
-fruits.shift();
-
-console.log(fruits);
-
-fruits.splice(2, 2);
-
-console.log(fruits);
-
-var students = [
-  ['Alex', 'Pohlman'],
-  ['Mason', 'Schnell'],
-  ['Andrew', 'Opitz', ['coding', 'coffee drinking']]
-];
+// Function that takes a name(string) as an argument and prints that name to the console
 
 
-// var fullName = 'JD Tadlock';
+function printName(type, firstName, lastName) {
+  if (type === 'first') {
+    return firstName;
+  }
 
-// console.log(fullName[3]);
+  if (type.toLowerCase() === 'last') {
+    return lastName;
+  }
+
+  return 'no type supplied';
+}
+
+
+var result = printName('LaSt', 'JD', 'Tadlock');
+
+console.log(result);
+
