@@ -1,58 +1,22 @@
 
-var str = 'some string';
-var num = 10;
-var bool = true;
-var arr = ['JD', 'Tadlock', 43, 'Rodolfo', ' Espinosa', 31];
-var anotherObj = {
-  color: 'red',
-  likes: 'pizza'
-};
+// Determine the data
 
-var jd = {
-  firstName: 'JD',
-  lastName: 'Tadlock',
-  age: 43,
-  hobbies: ['fishing', 'pickleball'],
-  info: {
-    location: 'ATL',
-    local: ['coffee shop', 'mall', 'fast food']
-  },
-  printAge: function () {
-    console.log(this.age);
-  },
-  printSomething: function (someStr, num, setDarkMode) {
-    // console.log(b);
-    console.log(num);
+// How do I store the data in the most organized way to utilize it for the app?
+
+var questions = [
+  {
+    questionText: 'What does the acronym D.O.M. stand for?',
+    choices: ['Do Only Math', 'Door Only Marketing', 'Document Object Model', 'Dragons Only Make-a-mess'],
+    correctAnswer: 'Javascript',
+    correctIndex: 2
   }
-};
+];
+
+console.log(questions[0]);
+console.log(questions[0].choices[2])
 
 
 
-jd.printAge();
-
-
-
-
-
-
-
-
-
-// console.log(str.toUpperCase());
-
-// var someName = 'some string';
-
-// someName();
-
-// function add(num1, num2) {
-//   console.log(num1 + num2);
-// }
-
-// add(1, 2);
-// add(3, 5);
-// add(1000234209342, 223490283450928509285098);
-
-
-// if (3 === 3) {
-//   console.log('yep, those are the same nums');
-// }
+// var question1Text = 'What does JS stand for?';
+// var question1Choices = ['JustStand', 'JustSkying', 'JokeSyllabus', 'Javascript'];
+// var question1Answer = 'Javascript';
