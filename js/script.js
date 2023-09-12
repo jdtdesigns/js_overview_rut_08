@@ -4,6 +4,13 @@
 // How do I store the data in the most organized way to utilize it for the app?
 
 var questions = [
+  // questionText, choices, correctAnswer
+  {
+    questionText: 'What does JS stand for?',
+    choices: ['JustStand', 'JustSkying', 'JokeSyllabus', 'Javascript'],
+    correctAnswer: 'Javascript',
+    correctIndex: 3
+  },
   {
     questionText: 'What does the acronym D.O.M. stand for?',
     choices: ['Do Only Math', 'Door Only Marketing', 'Document Object Model', 'Dragons Only Make-a-mess'],
