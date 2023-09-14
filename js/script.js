@@ -1,11 +1,13 @@
 
-// document.body.addEventListener('click', function (eventObj) {
-//   console.log(eventObj.target);
-// });
+document.body.addEventListener('click', function (eventObj) {
+  console.log('body click triggered!');
+});
 
 var toggle = document.querySelector('.toggle-bar');
 
-toggle.addEventListener('click', function () {
+toggle.addEventListener('click', function (eventObj) {
+  eventObj.stopPropagation();
+
   var toggleSwitch = document.querySelector('.toggle');
 
   toggleSwitch.classList.toggle('switch');
