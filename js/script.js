@@ -1,31 +1,67 @@
 
-document.body.addEventListener('click', function (eventObj) {
-  console.log('body click triggered!');
-});
+// var todoForm = document.querySelector('#todo-form');
+// var colorForm = document.querySelector('#color-form');
+// var body = document.body;
 
-var toggle = document.querySelector('.toggle-bar');
+// function addTodo(eventObj) {
+//   eventObj.preventDefault();
 
-toggle.addEventListener('click', function (eventObj) {
-  eventObj.stopPropagation();
-
-  var toggleSwitch = document.querySelector('.toggle');
-
-  toggleSwitch.classList.toggle('switch');
-});
+//   var titleInput = document.querySelector('.title');
+//   var textInput = document.querySelector('#text');
 
 
+//   titleInput.value = '';
+//   textInput.value = '';
+// }
+
+// function showColor() {
+//   var color = localStorage.getItem('color');
+
+//   body.style.backgroundColor = color;
+// }
+
+// function updateColor(eventObj) {
+//   eventObj.preventDefault();
+
+//   var colorInput = document.querySelector('#color-input');
+
+//   localStorage.setItem('color', colorInput.value);
+
+//   colorInput.value = '';
+
+//   showColor();
+// }
+
+// showColor();
+
+// todoForm.addEventListener('submit', addTodo);
+// colorForm.addEventListener('submit', updateColor);
 
 
-// var btn = document.querySelector('#add');
 
-// btn.addEventListener('click', function () {
-//   console.log('clicked')
-// });
 
-// document.addEventListener('keyup', function (eventObj) {
-//   var key = eventObj.keyCode || eventObj.key;
 
-//   if (key === 13 || key === 'enter') {
-//     console.log('you pressed the enter key');
-//   }
-// });
+
+
+
+
+
+// localStorage.setItem('darkMode', true);
+
+var darkMode = localStorage.getItem('darkMode');
+
+console.log(typeof darkMode);
+
+// localStorage.setItem('age', 43);
+
+var age = localStorage.getItem('age');
+
+console.log(typeof age);
+
+// localStorage.setItem('fruits', JSON.stringify(['apple', 'grape', 'orange']));
+
+var fruits = JSON.parse(localStorage.getItem('fruits'));
+
+
+console.log(fruits[0]);
+
