@@ -1,67 +1,24 @@
 
-// var todoForm = document.querySelector('#todo-form');
-// var colorForm = document.querySelector('#color-form');
-// var body = document.body;
 
-// function addTodo(eventObj) {
-//   eventObj.preventDefault();
-
-//   var titleInput = document.querySelector('.title');
-//   var textInput = document.querySelector('#text');
-
-
-//   titleInput.value = '';
-//   textInput.value = '';
+// function someFunc() {
+//   return 'some value';
 // }
 
-// function showColor() {
-//   var color = localStorage.getItem('color');
+// var result = someFunc();
 
-//   body.style.backgroundColor = color;
-// }
+// console.log(result);
 
-// function updateColor(eventObj) {
-//   eventObj.preventDefault();
+// localStorage.setItem('name', 'JD');
+// var result = localStorage.getItem('name');
 
-//   var colorInput = document.querySelector('#color-input');
-
-//   localStorage.setItem('color', colorInput.value);
-
-//   colorInput.value = '';
-
-//   showColor();
-// }
-
-// showColor();
-
-// todoForm.addEventListener('submit', addTodo);
-// colorForm.addEventListener('submit', updateColor);
+// console.log(result);
 
 
+// localStorage.removeItem('name');
+// var fruits = ['orange', 'apple', 'grape'];
 
+// localStorage.setItem('fruits', JSON.stringify(fruits));
+var saved = localStorage.getItem('fruits');
+var arr = JSON.parse(saved);
 
-
-
-
-
-
-
-// localStorage.setItem('darkMode', true);
-
-var darkMode = localStorage.getItem('darkMode');
-
-console.log(typeof darkMode);
-
-// localStorage.setItem('age', 43);
-
-var age = localStorage.getItem('age');
-
-console.log(typeof age);
-
-// localStorage.setItem('fruits', JSON.stringify(['apple', 'grape', 'orange']));
-
-var fruits = JSON.parse(localStorage.getItem('fruits'));
-
-
-console.log(fruits[0]);
-
+console.log(saved);
